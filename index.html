@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> MultiCalc </title>
+</head>
+<body>  
+    <div class="box-container" id="container">
+        <h2> Cálculo de gorjetas</h2>
+
+        <div id="receptor">
+
+            <p> Digite o valor da conta: <br>
+                <input type="number" id="entrada" min="1"> <br>
+                <input type="button" value="Resultado" onclick="calcular()" id="button">
+            </p>
+
+            <p id="msg">Conta a pagar</p>
+        </div>
+    </div><hr>
+
+    <div class="box-container" id="">
+        <h2> Conversor de moedas</h2>
+        
+        <div id="seltab">
+            <p> Selecione a moeda que se deseja converter para dólar<br>
+                <input type="radio" id="real" name="money" checked> Real
+                <input type="radio" id="euro" name="money">Euro
+                <input type="radio" id="libra" name="money"> Libra Esterlina
+                <input type="radio" id="rublo" name="money"> Rublo 
+            </p>
+
+            <p>Digite o valor que se deseja converter
+                <input type="number" id="valor" min="1"> 
+            </p>
+        
+            <input type="button" value="Resultado" onclick="converter()" id="button">
+            <p id="time">Conversor</p>
+        </div>
+    </div><hr>
+
+    <div class="box-container" id="">
+        <h2> Calcule seu escore na prova objetiva  do IFRN</h2>
+        
+        <div id="seltab">
+
+            <p> Digite o número de questões acertadas em matemática <br>
+                <input type="number" id="mquest" min="1">
+            </p>
+
+            <p>Digite o número de questões acertadas em português <br>
+                <input type= "number" id="pquest" min="1">
+            </p>
+        
+            <input type="button" value="Resultado" onclick="escore()" id="button">
+            <p id="pontuacao">Escore</p>
+        </div>
+    </div><hr>
+
+    <div class="box-container" id="">
+        <h2> Calcule sua média final</h2>
+    
+        <div id="seltab">
+    
+            <p> Digite a nota do 1º bimestre<br>
+                <input type="number" id="primeirob" min="1">
+            </p>
+    
+            <p>Digite a nota do 2º bimestre <br>
+                <input type="number" id="segundob" min="1">
+            </p>
+    
+            <p>Digite a nota do 3º bimestre <br>
+                <input type="number" id="terceirob" min="1" max="100">
+            </p>
+
+            <p>Digite a nota do 4º bimestre <br>
+                <input type="number" id="quartob" min="1" max="100">
+            </p>
+                <input type="button" value="Resultado" onclick="resultado()" id="button">
+            <p id="result">Resultado Final</p>
+            <p id="situacao"> Situação </p>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
